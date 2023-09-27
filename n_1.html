@@ -1,270 +1,394 @@
 <!DOCTYPE html>
+
 <head>
-    <meta charset="utf-8">
-    <title>Periódico el Faro</title>
-    <link rel="icon" type="image/x-icon" href="img/icono.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <!--fuente google-->
-    <link href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>Periódico el Faro</title>
+  <link rel="icon" type="image/x-icon" href="img/icono.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <!--fuente google-->
+  <link href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 </head>
 
 <body class="body">
-    <header>
+  <header>
 
-        <div class="container">
-			<div class="logo-wrapper d-flex align-items-center">
-				<h1>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="img/faro.png" alt="El Faro" width="20" height="24">
-                        "Periódico El Faro" 
-                      </a>
-				</h1>
-			</div>
-        </div>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid">
-              
+    <div class="container">
+      <div class="logo-wrapper d-flex align-items-center">
+        <h1>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/faro.png" alt="El Faro" width="20" height="24">
+            "Periódico El Faro"
+          </a>
+        </h1>
+      </div>
+    </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <div class="container-fluid">
 
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="n_1.html">Noticias</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="d_1.html">Deportes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="e_1.html">Economía</a>
-                  </li>
-                  <li class="nav-item">
-                    <li><a class="nav-link px-3 contacto" data-bs-toggle="modal" href= "#exampleModal"> Contactanos</a></li>
-                    
 
-                </ul>
-                  </li>
-                </ul>
-                  <span class="navbar-text">
-                    <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true">
-                        
-                        <script src="js/script.js"> </script> <!--script de la fecha-->
-                        <div id="reloj"></div> <!--script hora--></a>
-                  </span>                  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="n_1.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="d_1.html">Deportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="e_1.html">Economía</a>
+            </li>
+            <li class="nav-item">
+            <li><a class="nav-link px-3 contacto" data-bs-toggle="modal" href="#exampleModal"> Contáctenos</a></li>
+
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append">
+                <span class="input-group-text">Buscar </span>
               </div>
             </div>
-        </nav>
+          </ul>
+          </li>
+          </ul>
+          <span class="navbar-text">
+            <a class="nav-link disabled " href="#" tabindex="-1" aria-disabled="true">
+              &nbsp;
+              <script src="js/script.js">  </script> <!--script de la fecha-->
+              <div id="reloj" class="reloj"></div> <!--script hora-->
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    </header>
-
-    <script src="bootstrap/js/bootstrap.min.js"> </script>
-
-
-
-
-
-        <div class="container noticiastop section col-sm-12">
-
-            <div class="container main-news ">
-				<div class="row">
-                  
-
-					<div class="col-8">
-                        <div class="titulos">
-                            <span>Noticias</span>
-                        </div>
-                        <hr>
-						<h1 id="noti1">Del derecho a la vida a la reducción de parlamentarios: Los principales artículos aprobados esta semana en el Consejo
+  <script src="bootstrap/js/bootstrap.min.js"> </script>
 
 
+  <div class="container section mt-4">
+    <div class="titulos">
+      <span>Avisos &amp; Publicidad</span>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+        <div class="mb-2 image image-xs">
+          <img class="pub" src="img/p_1.jpg">
+        </div>
+        <a href="">
+          MG ZS $ 9.490.000
+        </a>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+        <div class="mb-2 image image-xs">
+          <img class="pub" src="img/p_2.jpg">
+        </div>
+        <a href="">
+          Toyota Corolla $ 10.490.000
+        </a>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+        <div class="mb-2 image image-xs">
+          <img class="pub" src="img/p_3.jpg">
+        </div>
+        <a href="">
+          Hyundai Elantra $ 20.990.000
+        </a>
+      </div>
+      <div class="col-sm-12 col-xs-12 col-md-3 col-lg-3">
+        <div class="mb-2 image image-xs">
+          <img class="pub" src="img/p_4.jpg">
+        </div>
+        <a href="">
+          Peugeot 3008 $ 17.390.000
+        </a>
+      </div>
+    </div>
+  </div>
 
 
-            </h1>
+  <div class="container noticiastop section col-sm-12">
 
-						<small>
-                            24 de Septiembre de 2023
-                        </small>
-
-						<p class="mt-4 summary">
-              Este lunes continuarán las votaciones en el órgano. Se retomará el Capítulo IV desde el artículo 69, tal como se ha hecho en jornadas anteriores, en dos sesiones distintas.
+    <div class="container main-news ">
+      <div class="row">
 
 
-                        </p>
-						<img src="img/t_1.jpg" class="mt-3 thumb">
-						<div class="story mt-4">
-							<p>
-                La ley protege la vida de quien está por nacer; reclusión domiciliaria para enfermos terminales; libertad de elección en salud; derecho preferente de los padres a elegir la educación de sus hijos; exención del pago de contribuciones e impuesto territorial para la vivienda principal; los partidos políticos deberán adoptar mecanismos de dirección y supervisión para prevenir infracciones a la probidad y transparencia; y hasta la reducción de parlamentarios por distrito. Distintas son las normas que se han aprobado esta semana en el Consejo Constitucional. Si bien el viernes 15 de septiembre se despachó el Capítulo I (llamado Fundamentos del Orden Constitucional), estos últimos días se ha avanzado con más celeridad -considerando que hubo dos días feriados por Fiestas Patrias- llegando hasta parte del Capítulo IV. A continuación, revisa un detalle de los principales artículos que han visto luz verde en la instancia.
-
-
-                            </p>
-							<p>
-                El miércoles, la discusión en el pleno inició con la votación del Capítulo II sobre "Derechos y libertades fundamentales, garantías y deberes constitucionales". Ese día con 33 votos de la oposición y 17 en contra del oficialismo, los consejeros aprobaron el inciso 1 del artículo 16 que señala "el derecho a la vida. La ley protege la vida de quien está por nacer. Se prohíbe la pena de muerte". Esa jornada también avanzó el literal b del inciso 4 del artículo 16 -por 34 votos a favor, 15 en contra y una abstención-, en el que se precisa que "la ley regulará el ingreso, estadía, residencia y egreso de extranjeros del territorio nacional. Los extranjeros que ingresen al territorio nacional de forma clandestina o por pasos no habilitados, serán expulsados en el menor tiempo posible o devueltos a su país de origen, tránsito o residencia, salvo en los casos de refugio o asilo expresamente contemplados en los tratados internacionales ratificados por Chile y que se encuentren vigentes".
-
-                            </p>
-							<p>
-                En el mismo inciso, también destacó la aprobación del liberal h, el cual sostiene que "las personas condenadas a una pena privativa de libertad podrán solicitar al tribunal competente la sustitución de dicha pena por la de reclusión domiciliaria total siempre que se acredite conforme a la ley, la existencia de una enfermedad terminal y que el condenado no represente un peligro actual para la sociedad". El día jueves, el órgano retomó la votación en esta sección del texto y aprobó -por 33 votos a favor y 17 en contra- el inciso 21 que establece "el derecho a la protección de la salud en sus dimensiones física y mental", en su literales a, d y e. Asimismo, se visó por 32 votos a favor, 17 en contra y la abstención de la consejera Ivonne Mangelsdorff (RN), el literal c sobre que "la ley establecerá un plan de salud universal, sin discriminación por edad, sexo o preexistencia médica, el cual será ofrecido por instituciones privadas y estatales".
-
-
-
-                            </p>
-							
-						</div>
-
-                        
-
-
-					</div>
-
-
-					<div class="col-4">
-						<div class="trending mt-4">
-							<div class="titulos">
-								<span>Ultimas Noticias</span>
-							</div>
-							<div class="row">
-								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-									<img class="thumb" src="img/e_1.gif">
-								</div>
-								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-									<a href="e_1.html#eco1">
-										Análisis económico del II trimestre: 11 de 16 regiones tuvieron menor actividad que en mismo periodo de 2022
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-									<img class="thumb" src="img/e_2.gif">
-								</div>
-								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-									<a href="e_1.html#eco2">
-										Apuestas en línea: Polla asegura que hay 1.200 sitios de juegos ilegales en Chile y entrega listado a Subtel
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-									<img class="thumb" src="img/d_1.jpg">
-								</div>
-								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-									<a href="d_1.html#depo1">
-										Colo Colo-Cobreloa es una de las llaves: Cómo y cuándo serán las semifinales de Copa Chile
-									</a>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
-									<img class="thumb" src="img/d_2.jpg">
-								</div>
-								<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
-									<a href="d_1.html#depo2">
-										Jorge Sampaoli casi fuera del Flamengo: Revelan el discurso que dio en el camarín y los millones que costaría su salida
-									</a>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-
-
-					<div class="col-8">
-                        <hr>
-						<h1 id="noti2">Cadem: Apoyo a la opción "en contra" aumenta a 59% y sólo un 21% votaría "a favor" del proyecto de Constitución del Consejo
+        <div class="col-8">
+          <div class="titulos">
+            <span>Noticias</span>
+          </div>
+          <hr>
+          <h1 id="noti1">Del derecho a la vida a la reducción de parlamentarios: Los principales artículos aprobados
+            esta semana en el Consejo
 
 
 
 
-                        </h1>
+          </h1>
 
-						<small>
-                            24 de Septiembre de 2023
-                        </small>
+          <small>
+            24 de Septiembre de 2023
+          </small>
 
-						<p class="mt-4 summary">
-              En tanto, la evaluación a la gestión del Presidente Boric no sufrió grandes cambios, arrojando esta semana un 65% de desaprobación y un 32% de aprobación. En su gabinete, Jaime Pizarro (Deportes) es el ministro mejor evaluado y Camila Vallejo (vocería) la peor calificada.
-
-
-
-                        </p>
-						<img src="img/t_2jpg.jpg" class="mt-3 thumb">
-						<div class="story mt-4">
-							<p>
-                En una semana clave para el segundo proceso constitucional que vive el país, donde se aprobaron varias normas que estarán contempladas en el borrador de nueva Constitución, la Encuesta Plaza Pública Cadem arrojó esta semana que el rechazo a la propuesta redactada por el Consejo se incrementó. En concreto, la opción "En contra" -que reemplaza al "Rechazo" subió dos puntos respecto al estudio del 15 de septiembre y se ubicó en 59%. Mientras que "A favor" ("Apruebo") bajó al 21%.
+          <p class="mt-4 summary">
+            Este lunes continuarán las votaciones en el órgano. Se retomará el Capítulo IV desde el artículo 69, tal
+            como se ha hecho en jornadas anteriores, en dos sesiones distintas.
 
 
-
-                            </p>
-							<p>
-                Según Cadem, las condiciones más señaladas para votar "En contra" de la propuesta son "El Presidente Boric llama a votar a favor" (63%), "José Antonio Kast llama a votar en contra" (58%) y si "La propuesta del Consejo se aprueba sólo con votos de Chile Vamos" (58%). Mientras que las condiciones para votar "A favor" son "el texto da estabilidad al futuro del país" (76%), "La propuesta del consejo se aprueba de forma transversal por todos los partidos políticos" (49%) y si "El texto termina con el debate constitucional" (46%). A la fecha, un 64% de los consultados considera que el país necesita una nueva Constitución, versus un 34% que opta por quedarse con la actual norma fundamental. Evaluación a Gabriel Boric y su gabinete La evaluación al Presidente Gabriel Boric de esta semana no mostró grandes variaciones respecto al sondeo anterior. En detalle, un 65% desaprueba su gestión al mando del Ejecutivo, subiendo un punto desde la semana pasada. En tanto, su aprobación se incrementó en un punto y se situó en 32%.
-
-
-                            </p>
-							
-							
-						</div>
-
-                        
-
-
-					</div>
-
-
-
-					<div class="col-8 t_3">
-            <hr>
-<h1 id="noti3">Ante aumento de actividad en Volcán Villarrica, Pucón suspende clases para este lunes y traslada a pacientes postrados
-
-
-
-            </h1>
-
-<small>
-                24 de Septiembre de 2023
-            </small>
-
-<p class="mt-4 summary">
-  En el caso de las comunas de Villarrica y Panguipulli, sus alcaldes encabezaron comités de emergencia para evaluar medidas a tomar, llamando a su vez a la calma.
+          </p>
+          <img src="img/t_1.jpg" class="mt-3 thumb">
+          <div class="story mt-4">
+            <p>
+              La ley protege la vida de quien está por nacer; reclusión domiciliaria para enfermos terminales; libertad
+              de elección en salud; derecho preferente de los padres a elegir la educación de sus hijos; exención del
+              pago de contribuciones e impuesto territorial para la vivienda principal; los partidos políticos deberán
+              adoptar mecanismos de dirección y supervisión para prevenir infracciones a la probidad y transparencia; y
+              hasta la reducción de parlamentarios por distrito. Distintas son las normas que se han aprobado esta
+              semana en el Consejo Constitucional. Si bien el viernes 15 de septiembre se despachó el Capítulo I
+              (llamado Fundamentos del Orden Constitucional), estos últimos días se ha avanzado con más celeridad
+              -considerando que hubo dos días feriados por Fiestas Patrias- llegando hasta parte del Capítulo IV. A
+              continuación, revisa un detalle de los principales artículos que han visto luz verde en la instancia.
 
 
             </p>
-<img src="img/t_3.jpg" class="mt-3 thumb">
-<div class="story mt-4">
-  <p>
-    Debido al incremento de la actividad en el Volcán Villarrica, que llevó al Servicio Nacional de Geología y Minería a elevar alerta Naranja, la Municipalidad de Pucón ha tomado una serie de medidas para resguardar la integridad de su población. Mientras que otras comunas cercanas han establecido comités de emergencias con autoridades regionales y centrales. Entre esas medidas destaca la suspensión de clases y el traslado de pacientes postrados a otros centros asistenciales de la región.
+            <p>
+              El miércoles, la discusión en el pleno inició con la votación del Capítulo II sobre "Derechos y libertades
+              fundamentales, garantías y deberes constitucionales". Ese día con 33 votos de la oposición y 17 en contra
+              del oficialismo, los consejeros aprobaron el inciso 1 del artículo 16 que señala "el derecho a la vida. La
+              ley protege la vida de quien está por nacer. Se prohíbe la pena de muerte". Esa jornada también avanzó el
+              literal b del inciso 4 del artículo 16 -por 34 votos a favor, 15 en contra y una abstención-, en el que se
+              precisa que "la ley regulará el ingreso, estadía, residencia y egreso de extranjeros del territorio
+              nacional. Los extranjeros que ingresen al territorio nacional de forma clandestina o por pasos no
+              habilitados, serán expulsados en el menor tiempo posible o devueltos a su país de origen, tránsito o
+              residencia, salvo en los casos de refugio o asilo expresamente contemplados en los tratados
+              internacionales ratificados por Chile y que se encuentren vigentes".
+
+            </p>
+            <p>
+              En el mismo inciso, también destacó la aprobación del liberal h, el cual sostiene que "las personas
+              condenadas a una pena privativa de libertad podrán solicitar al tribunal competente la sustitución de
+              dicha pena por la de reclusión domiciliaria total siempre que se acredite conforme a la ley, la existencia
+              de una enfermedad terminal y que el condenado no represente un peligro actual para la sociedad". El día
+              jueves, el órgano retomó la votación en esta sección del texto y aprobó -por 33 votos a favor y 17 en
+              contra- el inciso 21 que establece "el derecho a la protección de la salud en sus dimensiones física y
+              mental", en su literales a, d y e. Asimismo, se visó por 32 votos a favor, 17 en contra y la abstención de
+              la consejera Ivonne Mangelsdorff (RN), el literal c sobre que "la ley establecerá un plan de salud
+              universal, sin discriminación por edad, sexo o preexistencia médica, el cual será ofrecido por
+              instituciones privadas y estatales".
 
 
 
-                </p>
-  <p>
-En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un comité de emergencia, el alcalde Carlos Barra informó la suspensión de clases de todos los establecimientos educacionales, tanto municipales como particulares. "A partir de ahora la Municipalidad dará la instrucción a todos los colegios del cierre de las actividades escolares, en toda la comuna. Esa es una facultad que tiene el alcalde, que tiene la municipalidad, por lo tanto se declara el cierre de todos los colegios. No vamos a tener ninguna atención online, sino cerrado. Y tenemos tres días para poder evaluar con el Ministerio de Educación cuál va a ser el comportamiento futuro si esta situación", dijo el jefe comunal. Asimismo, en el hospital de la comuna se procedió al traslado de 27 pacientes postrados. Éstos están siendo llevados a Villarrica, para luego ser distribuidos a distintos centros asistenciales de la Región de La Araucanía. "Van todos con un acompañante. Ellos ya son conscientes de lo que va a pasar, pero los vamos a atender de forma especial", afirmó Carlos Barra. Con la elevación a Alerta Naranja, que afecta a un radio de 8 kilómetros a la redonda del volcán, los centros de inviernos que aún se encuentran habilitados debieron evacuar. Procedimiento que se realizó de manera efectiva como indicó el alcalde. Por otra parte, en las comunas de Villarrica y Panguipulli, sus alcaldes encabezaron el Comité de Gestión de Riesgo Comunal para evaluar los pasos a seguir en caso de que la actividad volcánica se incremente. El alcalde de Panguipulli, Pedro Burgos Vásquez, expresó que "estamos muy preocupados por el reciente aumento de fase de alerta amarilla a alerta naranja del volcán Villarrica. Nosotros como municipalidad ya estamos generando los comités de emergencia que implica la participación, no solamente de instituciones de resguardo, de emergencia, sino que además las redes de información y trabajo a través de lo que significa el territorio". "Esto lo vamos a continuar haciendo también el día de mañana, ante la eventualidad que se produzca alguna erupción del volcán Villarrica, que esperamos que no se genere. Además, esto implica una coordinación absoluta con las autoridades regionales a cargo de esta materia y en ese sentido el llamado, por supuesto, es a la tranquilidad, pero también a la preparación consciente con todo los requerimientos que implica", reafirmó.
+            </p>
 
-
-                </p>
-  
-  
-</div>
-
-            
-
-
-</div>
-
-				</div>
-			</div>
+          </div>
 
 
 
+
+        </div>
+
+
+        <div class="col-4">
+          <div class="trending mt-4">
+            <div class="titulos">
+              <span>Ultimas Noticias</span>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <img class="thumb" src="img/e_1.gif">
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <a href="e_1.html#eco1">
+                  Análisis económico del II trimestre: 11 de 16 regiones tuvieron menor actividad que en mismo periodo
+                  de 2022
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <img class="thumb" src="img/e_2.gif">
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <a href="e_1.html#eco2">
+                  Apuestas en línea: Polla asegura que hay 1.200 sitios de juegos ilegales en Chile y entrega listado a
+                  Subtel
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <img class="thumb" src="img/d_1.jpg">
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <a href="d_1.html#depo1">
+                  Colo Colo-Cobreloa es una de las llaves: Cómo y cuándo serán las semifinales de Copa Chile
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <img class="thumb" src="img/d_2.jpg">
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <a href="d_1.html#depo2">
+                  Jorge Sampaoli casi fuera del Flamengo: Revelan el discurso que dio en el camarín y los millones que
+                  costaría su salida
+                </a>
+              </div>
             </div>
 
+          </div>
+        </div>
+
+
+        <div class="col-8">
+          <hr>
+          <h1 id="noti2">Cadem: Apoyo a la opción "en contra" aumenta a 59% y sólo un 21% votaría "a favor" del proyecto
+            de Constitución del Consejo
+
+
+
+
+          </h1>
+
+          <small>
+            24 de Septiembre de 2023
+          </small>
+
+          <p class="mt-4 summary">
+            En tanto, la evaluación a la gestión del Presidente Boric no sufrió grandes cambios, arrojando esta semana
+            un 65% de desaprobación y un 32% de aprobación. En su gabinete, Jaime Pizarro (Deportes) es el ministro
+            mejor evaluado y Camila Vallejo (vocería) la peor calificada.
+
+
+
+          </p>
+          <img src="img/t_2jpg.jpg" class="mt-3 thumb">
+          <div class="story mt-4">
+            <p>
+              En una semana clave para el segundo proceso constitucional que vive el país, donde se aprobaron varias
+              normas que estarán contempladas en el borrador de nueva Constitución, la Encuesta Plaza Pública Cadem
+              arrojó esta semana que el rechazo a la propuesta redactada por el Consejo se incrementó. En concreto, la
+              opción "En contra" -que reemplaza al "Rechazo" subió dos puntos respecto al estudio del 15 de septiembre y
+              se ubicó en 59%. Mientras que "A favor" ("Apruebo") bajó al 21%.
+
+
+
+            </p>
+            <p>
+              Según Cadem, las condiciones más señaladas para votar "En contra" de la propuesta son "El Presidente Boric
+              llama a votar a favor" (63%), "José Antonio Kast llama a votar en contra" (58%) y si "La propuesta del
+              Consejo se aprueba sólo con votos de Chile Vamos" (58%). Mientras que las condiciones para votar "A favor"
+              son "el texto da estabilidad al futuro del país" (76%), "La propuesta del consejo se aprueba de forma
+              transversal por todos los partidos políticos" (49%) y si "El texto termina con el debate constitucional"
+              (46%). A la fecha, un 64% de los consultados considera que el país necesita una nueva Constitución, versus
+              un 34% que opta por quedarse con la actual norma fundamental. Evaluación a Gabriel Boric y su gabinete La
+              evaluación al Presidente Gabriel Boric de esta semana no mostró grandes variaciones respecto al sondeo
+              anterior. En detalle, un 65% desaprueba su gestión al mando del Ejecutivo, subiendo un punto desde la
+              semana pasada. En tanto, su aprobación se incrementó en un punto y se situó en 32%.
+
+
+            </p>
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="col-8 t_3">
+          <hr>
+          <h1 id="noti3">Ante aumento de actividad en Volcán Villarrica, Pucón suspende clases para este lunes y
+            traslada a pacientes postrados
+
+
+
+          </h1>
+
+          <small>
+            24 de Septiembre de 2023
+          </small>
+
+          <p class="mt-4 summary">
+            En el caso de las comunas de Villarrica y Panguipulli, sus alcaldes encabezaron comités de emergencia para
+            evaluar medidas a tomar, llamando a su vez a la calma.
+
+
+          </p>
+          <img src="img/t_3.jpg" class="mt-3 thumb">
+          <div class="story mt-4">
+            <p>
+              Debido al incremento de la actividad en el Volcán Villarrica, que llevó al Servicio Nacional de Geología y
+              Minería a elevar alerta Naranja, la Municipalidad de Pucón ha tomado una serie de medidas para resguardar
+              la integridad de su población. Mientras que otras comunas cercanas han establecido comités de emergencias
+              con autoridades regionales y centrales. Entre esas medidas destaca la suspensión de clases y el traslado
+              de pacientes postrados a otros centros asistenciales de la región.
+
+
+
+            </p>
+            <p>
+              En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un comité de emergencia, el
+              alcalde Carlos Barra informó la suspensión de clases de todos los establecimientos educacionales, tanto
+              municipales como particulares. "A partir de ahora la Municipalidad dará la instrucción a todos los
+              colegios del cierre de las actividades escolares, en toda la comuna. Esa es una facultad que tiene el
+              alcalde, que tiene la municipalidad, por lo tanto se declara el cierre de todos los colegios. No vamos a
+              tener ninguna atención online, sino cerrado. Y tenemos tres días para poder evaluar con el Ministerio de
+              Educación cuál va a ser el comportamiento futuro si esta situación", dijo el jefe comunal. Asimismo, en el
+              hospital de la comuna se procedió al traslado de 27 pacientes postrados. Éstos están siendo llevados a
+              Villarrica, para luego ser distribuidos a distintos centros asistenciales de la Región de La Araucanía.
+              "Van todos con un acompañante. Ellos ya son conscientes de lo que va a pasar, pero los vamos a atender de
+              forma especial", afirmó Carlos Barra. Con la elevación a Alerta Naranja, que afecta a un radio de 8
+              kilómetros a la redonda del volcán, los centros de inviernos que aún se encuentran habilitados debieron
+              evacuar. Procedimiento que se realizó de manera efectiva como indicó el alcalde. Por otra parte, en las
+              comunas de Villarrica y Panguipulli, sus alcaldes encabezaron el Comité de Gestión de Riesgo Comunal para
+              evaluar los pasos a seguir en caso de que la actividad volcánica se incremente. El alcalde de Panguipulli,
+              Pedro Burgos Vásquez, expresó que "estamos muy preocupados por el reciente aumento de fase de alerta
+              amarilla a alerta naranja del volcán Villarrica. Nosotros como municipalidad ya estamos generando los
+              comités de emergencia que implica la participación, no solamente de instituciones de resguardo, de
+              emergencia, sino que además las redes de información y trabajo a través de lo que significa el
+              territorio". "Esto lo vamos a continuar haciendo también el día de mañana, ante la eventualidad que se
+              produzca alguna erupción del volcán Villarrica, que esperamos que no se genere. Además, esto implica una
+              coordinación absoluta con las autoridades regionales a cargo de esta materia y en ese sentido el llamado,
+              por supuesto, es a la tranquilidad, pero también a la preparación consciente con todo los requerimientos
+              que implica", reafirmó.
+
+
+            </p>
+
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
 
 
 
@@ -273,38 +397,39 @@ En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un 
 
 
 
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Mensaje</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="recipient-name" class="col-form-label">Correo:</label>
-                          <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                          <label for="message-text" class="col-form-label">Mensaje:</label>
-                          <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      <button type="button" class="btn btn-primary">Enviar Mensaje</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo Mensaje</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Correo:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<footer class="text-center text-lg-start bg-white text-muted">
-    
-  
+
+
+  <footer class="text-center text-lg-start bg-white text-muted">
+
+
     <section class="izq">
       <div class="container text-center text-md-start mt-5">
         <div class="row mt-3">
@@ -313,7 +438,8 @@ En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un 
               <i class="fas fa-gem me-3 text-secondary"></i>Periódico el Faro
             </h6>
             <p>
-                Periódico el Faro es un medio de comunicación que abarca todo el país se especializa en la transmisión de noticias e informaciones de la actualidad nacional e internacional bajo una visión periodística.
+              Periódico el Faro es un medio de comunicación que abarca todo el país se especializa en la transmisión de
+              noticias e informaciones de la actualidad nacional e internacional bajo una visión periodística.
             </p>
           </div>
 
@@ -332,7 +458,7 @@ En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un 
             </p>
           </div>
 
-  
+
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
             <p><i class="fas fa-home me-3 text-secondary"></i> Santiago 1602, Chile</p>
@@ -346,8 +472,8 @@ En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un 
         </div>
       </div>
     </section>
-  
-   
+
+
     <div class="text-center p-4">
       © 2023 Copyright:
       <a class="text-reset fw-bold" href="https://www.elfaro.com/">ElFaroP.com</a>
@@ -356,7 +482,8 @@ En Pucón, comuna ubicada a 20 kilómetros aproximadamente del volcán, tras un 
 
 
 
-        </div>
-    </div>
-</body>        
+  </div>
+  </div>
+</body>
+
 </html>
